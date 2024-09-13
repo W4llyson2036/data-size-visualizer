@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>measuring data</title>
+</head>
+<body>
+  <h1>measuring data</h1>
+
+  <main>
+    <div class="container-info">
+      <p>1 = bit</p>
+      <p>2 = byte</p>
+      <p>3 = Kilobyte</p>
+      <p>4 = Megabyte</p>
+      <p>5 = Gigabyte</p>
+    </div>
+
+    <form action="#">
+      <div class="box-input">
+        <label for="type">type</label>
+        <input type="number" value="1" id='type' placeholder="1 - 5" class="file-type">
+      </div>
+
+      <div class="box-input">
+        <label for="size">size</label>
+        <input type="number" value="5" id="size" placeholder="1 - 1024" class="file-size">
+      </div>
+      
+      <fieldset class="form-buttons">
+        <button name="process">process</button>
+        <button name="clean">clean output</button>
+        <button name="copy">copy</button>
+      </fieldset>
+    </form>
+    <p class="display-type-and-size">wallyson</p>
+    <output class="output"></output>
+  </main>
+
+  <script src="dist/index.js"></script>
+</body>
+</html>
